@@ -1,0 +1,39 @@
+/*
+ * Think Up Testimonials Slider
+ * http://www.thinkupdesign.ca/testimonials/
+ *
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Author: Andrew Sepic (@Think_up_design)
+ *
+ */
+
+.flexslider .slides {
+  padding: 3rem 3rem 0;
+}
+
+#thinkup-testimonials{
+  width: 100%;
+}
+
+#thinkup-testimonials h2 {
+  float: right;
+  padding-right: 10%;
+}
+
+.flex-direction-nav a {
+  top: 35%;
+  height: 60px;
+}
+
+/* min-width 320px and max-width 480px */
+@media only screen and (min-width:18.75em) and (max-width:30em) {
+  #thinkup-testimonials h3 {
+    font-size: 1.1rem;
+  }
+  #thinkup-testimonials h2 {
+    font-size: 1.35rem;
+  }
+
+}
