@@ -9,18 +9,18 @@ Author URI:  http://www.thinkupdesign.ca
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-{Plugin Name} is free software: you can redistribute it and/or modify
+Think Up! Testimonials is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 any later version.
 
-{Plugin Name} is distributed in the hope that it will be useful,
+Think Up! Testimonials is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with {Plugin Name}. If not, see {URI to Plugin License}.
+along with Think Up! Testimonials. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 
 */
 
@@ -48,21 +48,18 @@ function tut_load() {
 add_action('wp_enqueue_scripts', 'tut_load');
 
 
-// Plugin Setup
-function tut_setup(){
-}
-register_activation_hook( __FILE__, 'tut_setup' );
-
 
 // Creates Markup Function
 function thinkup_testimonials(){
-if ( is_active_sidebar( 'thinkup-testimonials' ) ) :
-  echo '<!-- Testimonials -->
-        <div id="thinkup-testimonials" class="flexslider">
-        <ul class="testimonials slides">';
-        dynamic_sidebar('thinkup-testimonials');
-  echo'</ul></div><!-- testimonial section -->';
-endif;
+  //set default timer in case value is not set in callback
+  if(!isset($settime)){$settime = 5000;}
+  if ( is_active_sidebar( 'thinkup-testimonials' ) ) :
+    echo '<!-- Testimonials -->
+          <div id="thinkup-testimonials" class="flexslider">
+          <ul class="testimonials slides" data-timer="'. $settime .'">';
+          dynamic_sidebar('thinkup-testimonials');
+    echo'</ul></div><!-- testimonial section -->';
+  endif;
 }
 
 // add_shortcode('thinkup-testimonials','tut_display');
