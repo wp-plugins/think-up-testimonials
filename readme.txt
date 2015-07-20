@@ -3,8 +3,8 @@ Contributors: cipes
 Donate link: n/a
 Tags: testimonials, rotator, responsive, easy, text widget,
 Requires at least: 3.0.1
-Tested up to: 4.2
-Stable tag: 4.3
+Tested up to: 4.2.2
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,7 +37,8 @@ for the testimonial text and #thinkup-testimonials h2 {...} for the author text.
 
 = How can you change the delay between testimonials? =
 
-Right now there is no way to easily change the time delay. Hopefully this will be added in a future revision.
+You are able to set the delay time between testimonials using the callback function.  Place the delay time (in milliseconds) with the brackets of the
+the callback function. ie: thinkup_testimonials(9000); would set the time delay to 9 seconds between testimonials.
 
 == Screenshots ==
 
@@ -45,6 +46,9 @@ Right now there is no way to easily change the time delay. Hopefully this will b
 2. The back end look at the text widgets, markup used and the Testimonials sidebar.
 
 == Changelog ==
+
+= 1.1 =
+* Added rotator time delay setting thinkup-testimonials() callback function
 
 = 1.0 =
 * First version released to the wild
