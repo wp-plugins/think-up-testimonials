@@ -3,7 +3,7 @@
 Plugin Name: Think Up! Testimonials
 Plugin URI:  http://www.thinkupdesign.ca/think-up-testimonials
 Description: A responsive, easy to use testimonials plugin that doesn't require custom post types and uses simple text-widgets.
-Version:     1.0
+Version:     1.1
 Author:      Andrew Sepic
 Author URI:  http://www.thinkupdesign.ca
 License:     GPL2
