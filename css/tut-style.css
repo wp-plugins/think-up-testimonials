@@ -9,7 +9,7 @@
  *
  */
 
-.flexslider .slides {
+#thinkup-testimonials .flexslider .slides {
   padding: 3rem 3rem 0;
 }
 
@@ -22,7 +22,7 @@
   padding-right: 10%;
 }
 
-.flex-direction-nav a {
+#thinkup-testimonials .flex-direction-nav a {
   top: 35%;
   height: 60px;
 }
