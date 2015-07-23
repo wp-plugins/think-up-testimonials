@@ -50,7 +50,7 @@ add_action('wp_enqueue_scripts', 'tut_load');
 
 
 // Creates Markup Function
-function thinkup_testimonials(){
+function thinkup_testimonials($settime){
   //set default timer in case value is not set in callback
   if(!isset($settime)){$settime = 5000;}
   if ( is_active_sidebar( 'thinkup-testimonials' ) ) :
